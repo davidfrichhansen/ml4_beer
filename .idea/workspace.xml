@@ -13,18 +13,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Ml4_beer$gui_handler.coverage" NAME="gui_handler Coverage Results" MODIFIED="1520719400216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Ml4_beer$sql_handler.coverage" NAME="sql_handler Coverage Results" MODIFIED="1520716097981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Ml4_beer$gui_handler.coverage" NAME="gui_handler Coverage Results" MODIFIED="1520796606892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Ml4_beer$sql_handler.coverage" NAME="sql_handler Coverage Results" MODIFIED="1520775854784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="gui_handler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gui_handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="64" column="16" lean-forward="false" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+            <state relative-caret-position="774">
+              <caret line="97" column="6" lean-forward="false" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
               <folding>
-                <element signature="e#0#30#0" expanded="true" />
+                <element signature="e#0#22#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -33,25 +33,25 @@
       <file leaf-file-name="sql_handler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sql_handler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3006">
-              <caret line="173" column="2" lean-forward="false" selection-start-line="173" selection-start-column="2" selection-end-line="173" selection-end-column="2" />
+            <state relative-caret-position="454">
+              <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1520719621116" expanded="true" signature="937:1015" ph="CREATE TABLE... Users" />
-                <marker date="1520719621116" expanded="true" signature="1154:1200" ph="INSERT INTO Users... " />
-                <marker date="1520719621116" expanded="true" signature="1280:1437" ph="CREATE TABLE... Transactions" />
-                <marker date="1520719621116" expanded="true" signature="1499:1613" ph="CREATE TABLE... Products" />
-                <marker date="1520719621116" expanded="true" signature="2357:2395" ph="SELECT Room Users" />
-                <marker date="1520719621116" expanded="true" signature="2614:2655" ph="SELECT Name Products" />
-                <marker date="1520719621116" expanded="true" signature="2899:2983" ph="INSERT INTO Transactions... " />
-                <marker date="1520719621116" expanded="true" signature="3238:3311" ph="INSERT INTO Products... " />
-                <marker date="1520719621116" expanded="true" signature="3836:3872" ph="DELETE FROM Products... " />
-                <marker date="1520719621116" expanded="true" signature="4225:4247" ph="SELECT Room Users" />
-                <marker date="1520719621116" expanded="true" signature="4341:4367" ph="SELECT * FRO... Transactions" />
-                <marker date="1520719621116" expanded="true" signature="4546:4572" ph="SELECT * FRO... Transactions" />
-                <marker date="1520719621116" expanded="true" signature="4910:4951" ph="SELECT Price... Products" />
-                <marker date="1520719621116" expanded="true" signature="5508:5532" ph="DELETE FROM Transactions... " />
-                <marker date="1520719621116" expanded="true" signature="5705:5751" ph="INSERT INTO Users... " />
+                <marker date="1520796085770" expanded="true" signature="937:1015" ph="CREATE TABLE... Users" />
+                <marker date="1520796085770" expanded="true" signature="1154:1200" ph="INSERT INTO Users... " />
+                <marker date="1520796085770" expanded="true" signature="1280:1437" ph="CREATE TABLE... Transactions" />
+                <marker date="1520796085770" expanded="true" signature="1499:1613" ph="CREATE TABLE... Products" />
+                <marker date="1520796085770" expanded="true" signature="2357:2395" ph="SELECT Room Users" />
+                <marker date="1520796085770" expanded="true" signature="2614:2655" ph="SELECT Name Products" />
+                <marker date="1520796085770" expanded="true" signature="2899:2983" ph="INSERT INTO Transactions... " />
+                <marker date="1520796085770" expanded="true" signature="3238:3311" ph="INSERT INTO Products... " />
+                <marker date="1520796085770" expanded="true" signature="3693:3729" ph="DELETE FROM Products... " />
+                <marker date="1520796085770" expanded="true" signature="4082:4104" ph="SELECT Room Users" />
+                <marker date="1520796085770" expanded="true" signature="4198:4224" ph="SELECT * FRO... Transactions" />
+                <marker date="1520796085770" expanded="true" signature="4403:4429" ph="SELECT * FRO... Transactions" />
+                <marker date="1520796085770" expanded="true" signature="4767:4808" ph="SELECT Price... Products" />
+                <marker date="1520796085770" expanded="true" signature="5365:5389" ph="DELETE FROM Transactions... " />
+                <marker date="1520796085770" expanded="true" signature="5562:5608" ph="INSERT INTO Users... " />
               </folding>
             </state>
           </provider>
@@ -62,6 +62,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>famil</find>
+      <find>add_user</find>
+      <find>add_product_to_db</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -82,10 +84,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="51" />
-    <option name="y" value="283" />
-    <option name="width" value="1869" />
-    <option name="height" value="1084" />
+    <option name="x" value="2037" />
+    <option name="y" value="-4" />
+    <option name="width" value="1867" />
+    <option name="height" value="1076" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -205,16 +207,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="283" width="1871" height="1092" extended-state="6" />
+    <frame x="1971" y="-4" width="2509" height="1444" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2406577" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18612993" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -246,7 +248,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -257,21 +259,21 @@
           <caret line="173" column="2" lean-forward="true" selection-start-line="173" selection-start-column="2" selection-end-line="173" selection-end-column="2" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1520719621116" expanded="true" signature="937:1015" ph="CREATE TABLE... Users" />
-            <marker date="1520719621116" expanded="true" signature="1154:1200" ph="INSERT INTO Users... " />
-            <marker date="1520719621116" expanded="true" signature="1280:1437" ph="CREATE TABLE... Transactions" />
-            <marker date="1520719621116" expanded="true" signature="1499:1613" ph="CREATE TABLE... Products" />
-            <marker date="1520719621116" expanded="true" signature="2357:2395" ph="SELECT Room Users" />
-            <marker date="1520719621116" expanded="true" signature="2614:2655" ph="SELECT Name Products" />
-            <marker date="1520719621116" expanded="true" signature="2899:2983" ph="INSERT INTO Transactions... " />
-            <marker date="1520719621116" expanded="true" signature="3238:3311" ph="INSERT INTO Products... " />
-            <marker date="1520719621116" expanded="true" signature="3836:3872" ph="DELETE FROM Products... " />
-            <marker date="1520719621116" expanded="true" signature="4225:4247" ph="SELECT Room Users" />
-            <marker date="1520719621116" expanded="true" signature="4341:4367" ph="SELECT * FRO... Transactions" />
-            <marker date="1520719621116" expanded="true" signature="4546:4572" ph="SELECT * FRO... Transactions" />
-            <marker date="1520719621116" expanded="true" signature="4910:4951" ph="SELECT Price... Products" />
-            <marker date="1520719621116" expanded="true" signature="5508:5532" ph="DELETE FROM Transactions... " />
-            <marker date="1520719621116" expanded="true" signature="5705:5751" ph="INSERT INTO Users... " />
+            <marker date="1520796085770" expanded="true" signature="937:1015" ph="CREATE TABLE... Users" />
+            <marker date="1520796085770" expanded="true" signature="1154:1200" ph="INSERT INTO Users... " />
+            <marker date="1520796085770" expanded="true" signature="1280:1437" ph="CREATE TABLE... Transactions" />
+            <marker date="1520796085770" expanded="true" signature="1499:1613" ph="CREATE TABLE... Products" />
+            <marker date="1520796085770" expanded="true" signature="2357:2395" ph="SELECT Room Users" />
+            <marker date="1520796085770" expanded="true" signature="2614:2655" ph="SELECT Name Products" />
+            <marker date="1520796085770" expanded="true" signature="2899:2983" ph="INSERT INTO Transactions... " />
+            <marker date="1520796085770" expanded="true" signature="3238:3311" ph="INSERT INTO Products... " />
+            <marker date="1520796085770" expanded="true" signature="3693:3729" ph="DELETE FROM Products... " />
+            <marker date="1520796085770" expanded="true" signature="4082:4104" ph="SELECT Room Users" />
+            <marker date="1520796085770" expanded="true" signature="4198:4224" ph="SELECT * FRO... Transactions" />
+            <marker date="1520796085770" expanded="true" signature="4403:4429" ph="SELECT * FRO... Transactions" />
+            <marker date="1520796085770" expanded="true" signature="4767:4808" ph="SELECT Price... Products" />
+            <marker date="1520796085770" expanded="true" signature="5365:5389" ph="DELETE FROM Transactions... " />
+            <marker date="1520796085770" expanded="true" signature="5562:5608" ph="INSERT INTO Users... " />
           </folding>
         </state>
       </provider>
@@ -281,7 +283,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -302,43 +304,43 @@
     </entry>
     <entry file="file://$USER_HOME$/anaconda2/envs/py36/lib/python3.6/site-packages/appJar/appjar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="2462" column="29" lean-forward="true" selection-start-line="2462" selection-start-column="29" selection-end-line="2462" selection-end-column="29" />
+        <state relative-caret-position="328">
+          <caret line="9453" column="8" lean-forward="false" selection-start-line="9453" selection-start-column="8" selection-end-line="9453" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sql_handler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3006">
-          <caret line="173" column="2" lean-forward="false" selection-start-line="173" selection-start-column="2" selection-end-line="173" selection-end-column="2" />
+        <state relative-caret-position="454">
+          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1520719621116" expanded="true" signature="937:1015" ph="CREATE TABLE... Users" />
-            <marker date="1520719621116" expanded="true" signature="1154:1200" ph="INSERT INTO Users... " />
-            <marker date="1520719621116" expanded="true" signature="1280:1437" ph="CREATE TABLE... Transactions" />
-            <marker date="1520719621116" expanded="true" signature="1499:1613" ph="CREATE TABLE... Products" />
-            <marker date="1520719621116" expanded="true" signature="2357:2395" ph="SELECT Room Users" />
-            <marker date="1520719621116" expanded="true" signature="2614:2655" ph="SELECT Name Products" />
-            <marker date="1520719621116" expanded="true" signature="2899:2983" ph="INSERT INTO Transactions... " />
-            <marker date="1520719621116" expanded="true" signature="3238:3311" ph="INSERT INTO Products... " />
-            <marker date="1520719621116" expanded="true" signature="3836:3872" ph="DELETE FROM Products... " />
-            <marker date="1520719621116" expanded="true" signature="4225:4247" ph="SELECT Room Users" />
-            <marker date="1520719621116" expanded="true" signature="4341:4367" ph="SELECT * FRO... Transactions" />
-            <marker date="1520719621116" expanded="true" signature="4546:4572" ph="SELECT * FRO... Transactions" />
-            <marker date="1520719621116" expanded="true" signature="4910:4951" ph="SELECT Price... Products" />
-            <marker date="1520719621116" expanded="true" signature="5508:5532" ph="DELETE FROM Transactions... " />
-            <marker date="1520719621116" expanded="true" signature="5705:5751" ph="INSERT INTO Users... " />
+            <marker date="1520796085770" expanded="true" signature="937:1015" ph="CREATE TABLE... Users" />
+            <marker date="1520796085770" expanded="true" signature="1154:1200" ph="INSERT INTO Users... " />
+            <marker date="1520796085770" expanded="true" signature="1280:1437" ph="CREATE TABLE... Transactions" />
+            <marker date="1520796085770" expanded="true" signature="1499:1613" ph="CREATE TABLE... Products" />
+            <marker date="1520796085770" expanded="true" signature="2357:2395" ph="SELECT Room Users" />
+            <marker date="1520796085770" expanded="true" signature="2614:2655" ph="SELECT Name Products" />
+            <marker date="1520796085770" expanded="true" signature="2899:2983" ph="INSERT INTO Transactions... " />
+            <marker date="1520796085770" expanded="true" signature="3238:3311" ph="INSERT INTO Products... " />
+            <marker date="1520796085770" expanded="true" signature="3693:3729" ph="DELETE FROM Products... " />
+            <marker date="1520796085770" expanded="true" signature="4082:4104" ph="SELECT Room Users" />
+            <marker date="1520796085770" expanded="true" signature="4198:4224" ph="SELECT * FRO... Transactions" />
+            <marker date="1520796085770" expanded="true" signature="4403:4429" ph="SELECT * FRO... Transactions" />
+            <marker date="1520796085770" expanded="true" signature="4767:4808" ph="SELECT Price... Products" />
+            <marker date="1520796085770" expanded="true" signature="5365:5389" ph="DELETE FROM Transactions... " />
+            <marker date="1520796085770" expanded="true" signature="5562:5608" ph="INSERT INTO Users... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gui_handler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="64" column="16" lean-forward="false" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+        <state relative-caret-position="774">
+          <caret line="97" column="6" lean-forward="false" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -100,12 +100,10 @@ def add_product_to_db(product_name, barcode, price, category):
     conn = sqlite3.connect('beer_db.db')
 
     sql = "INSERT INTO Products (Barcode, Name, Price, Category) VALUES (?, ?, ?, ?)"
-    try:
-        conn.execute(sql, (barcode, product_name, price, category))
-        conn.commit()
-    except sqlite3.IntegrityError:
-        print("Error: Product barcode not unique. Product not added.")
-        conn.close() 
+
+    conn.execute(sql, (barcode, product_name, price, category))
+    conn.commit()
+
     conn.close()
 
 def change_product(**kwargs):
@@ -183,17 +181,14 @@ def add_user_to_db(name, barcode):
     # add a user to the DB
     conn = sqlite3.connect('beer_db.db')
     sql = "INSERT INTO Users (Room, Barcode) VALUES (?,?)"
-    try:
-        conn.execute(sql, (name, barcode))
-        conn.commit()
-    except sqlite3.IntegrityError:
-        print('Error: Room or barcode not unique. Not added')
 
-
+    conn.execute(sql, (name, barcode))
+    conn.commit()
     conn.close()
 
+
+#create_db()
 """
-create_db()
 add_product_to_db('Testprd', 123, 5, 'Beer')
 remove_product_from_db(123)
 add_product_to_db('Testprd', 123, 5.3, 'Beer'   )
