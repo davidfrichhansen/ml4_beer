@@ -192,12 +192,13 @@ def add_user_to_db(name, barcode):
 
     conn.close()
 
-
-#create_db()
-#add_product_to_db('Testprd', 123, 5, 'Beer')
-#remove_product_from_db(123)
-#add_product_to_db('Testprd', 123, 5.3)
-#transaction(433, 123, 10)
-#transaction(432, 123, 4)
-#add_user_to_db('X10', 'X10')
-#generate_bill()
+"""
+create_db()
+add_product_to_db('Testprd', 123, 5, 'Beer')
+remove_product_from_db(123)
+add_product_to_db('Testprd', 123, 5.3, 'Beer'   )
+transaction(433, 123, 10)
+transaction(432, 123, 4)
+add_user_to_db('X10', 'X10')
+generate_bill()
+"""
