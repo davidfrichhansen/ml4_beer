@@ -64,11 +64,7 @@ def transaction(user_barcode, product_barcode, multiplier):
 
     # connect to db
     conn = sqlite3.connect('beer_db.db')
-    chance = 50
-    if random.randrange(51) == 1:
-        print('MAAGEORDNING!!!!')
-        # TODO: Find a way to play sound.
-    
+
     # get timestamp - requires that system knows what time it is. unsure of offline stability.
     # may also change based on system, but Debian based Linux should be ok.
     curr_time = datetime.datetime.now().isoformat(' ')

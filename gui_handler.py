@@ -36,6 +36,20 @@ def show_add_user_sw():
 def show_add_prod_sw():
     main.showSubWindow("add_prod_sw")
 
+def show_rem_prod_sw():
+    main.showSubWindow("rem_prod_sw")
+
+def rem_prod_button_press(name):
+    if name == 'rem_prod_cancel':
+        main.hideSubWindow("rem_prod_sw")
+    elif name == 'rem_prod_submit':
+        barcode = main.getEntry("rem_prod_barcode_entry")
+        K.remove_product_from_db(barcode)
+        main.infoBox("Product with barcode %s removed from DB." % barcode)
+        main.hideSubWindow("rem_prod_sw")
+        main.showSubWindow("admin_tools")
+
+
 def add_user_button_press(name):
     if name == 'add_user_cancel':
         main.hideSubWindow(title="add_user_sw")
@@ -96,6 +110,7 @@ def add_prod_button_press(name):
 
 main = gui()
 main.setTitle("Mellemste 4. Oelsystem!")
+main.setIcon("maribo.gif")
 # set fullscreen
 
 main.setSize(1920, 1080)
@@ -142,6 +157,8 @@ main.enableEnter(add_user_button_press)
 main.stopSubWindow()
 ## end subwindow
 
+
+## start subwindow
 main.startSubWindow(name="add_prod_sw", title="Add product", modal=True)
 main.setBg("LightCyan")
 main.setFg("Black")
@@ -164,8 +181,26 @@ main.enableEnter(add_prod_button_press)
 
 
 main.stopSubWindow()
+## end subwindow
+
+## start subwindow
+main.startSubWindow(name="rem_prod_sw", title="Remove product", modal=True)
+main.setBg("LightCyan")
+main.setFg("Black")
+main.setSize(800, 600)
+main.setFont(size=14, family="Verdana")
+main.addLabel("Remove product from DB. Removal by name is not yet implemented", row=0, column=0, colspan=10)
+main.addLabel(title="rem_prod_barcode", text="Barcode of product to remove:", row=1, column=0)
+main.addEntry("rem_prod_barcode_entry", 1, 1)
+main.setFocus("rem_prod_barcode_entry")
+
+main.addNamedButton(title="rem_prod_cancel", name="Cancel", func=rem_prod_button_press, row=2, column=0)
+main.addNamedButton(title="rem_prod_submit", name="Submit", func=rem_prod_button_press, row=2, column=1)
+main.enableEnter(rem_prod_button_press)
+main.stopSubWindow()
 
 
+## end subwindow
 
 ## begin subwindow
 main.startSubWindow(name="admin_tools", title="Admin tools", modal=False)
@@ -173,8 +208,10 @@ main.setBg("LightCyan")
 main.setFg("Black")
 main.setSize(800, 600)
 main.addLabel("Welcome to admin tools!")
-#main.addButtons(["Create DB", "Add product","Remove product"], funcs=[])
-main.addButtons(["Leave Admin","Generate bill", "Add user", "Add product"], funcs=[close_admin, generate_bill_press, show_add_user_sw, show_add_prod_sw])
+main.addButtons(["Leave Admin","Generate bill", "Add user", "Add product", "Delete Product"],
+                funcs=[close_admin, generate_bill_press, show_add_user_sw, show_add_prod_sw, show_rem_prod_sw],
+                row=1)
+#main.addButtons(["Delete product", ])
 main.stopSubWindow()
 ## end subwindow
 
