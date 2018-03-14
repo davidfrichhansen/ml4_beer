@@ -112,18 +112,30 @@ main = gui()
 main.setTitle("Mellemste 4. Oelsystem!")
 main.setIcon("maribo.gif")
 # set fullscreen
-
 main.setSize(1920, 1080)
 main.setResizable(canResize=False)
 main.setBg("LightCyan")
 main.setLabelFont(size=20, family="Verdana")
 
 
+# latest transactions table
+main.addLabel("latest_transactions_label", text="Latest transactions", row=0, column=0)
+main.addListBox("latest_transactions_table", [] , 1, 0, colspan=5)
+
 # add admin button
-
 main.setButtonFont(size=14, family="Times")
-main.addButton("Admin", admin_window)
+main.addButton("Admin", admin_window, row=main.getRow())
 
+
+
+
+
+
+
+"""
+Subwindows below here.
+Behold, the AppJar shitshow has barely begun. Fear, mortals.
+"""
 ## begin subwindow
 main.startSubWindow(name="login", title="Login to Admin tools", modal=True)
 main.setBg("LightCyan")
@@ -211,7 +223,7 @@ main.addLabel("Welcome to admin tools!")
 main.addButtons(["Leave Admin","Generate bill", "Add user", "Add product", "Delete Product"],
                 funcs=[close_admin, generate_bill_press, show_add_user_sw, show_add_prod_sw, show_rem_prod_sw],
                 row=1)
-#main.addButtons(["Delete product", ])
+
 main.stopSubWindow()
 ## end subwindow
 

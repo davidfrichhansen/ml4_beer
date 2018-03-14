@@ -4,14 +4,13 @@ from pathlib import Path
 from os import remove
 import pandas as pd
 import csv
-import random
+
 
 def create_db():
     ### Creates DB from scratch! Will overwrite everything, so be careful
     ### If 'extra users' (ie. sublets, X-beboere etc.) have been added, these should be added manually again, after this function has been called.
     ### Use the appropriate function for this.
 
-    # TODO: Implement category in products
 
     if Path('beer_db.db').is_file():
         print('DB File already exists. Deleting old one and creating new.\nIf this was not intended, you are fucked.')
@@ -44,7 +43,6 @@ def create_db():
 
     conn.commit()
 
-    # TODO: Format nicely in comment
     sql = "CREATE TABLE Transactions (Room VARCHAR(10), ProductName VARCHAR(100) , Multiplier INT(100), Bought_at VARCHAR(30), FOREIGN KEY(Room) REFERENCES Users(Room))"
     conn.execute(sql)
     conn.commit()
@@ -60,7 +58,6 @@ def create_db():
 def transaction(user_barcode, product_barcode, multiplier):
     # adds a transaction to the db
 
-    # Maageordning: On average, every 'chance' purchases should give a ordning
 
     # connect to db
     conn = sqlite3.connect('beer_db.db')
