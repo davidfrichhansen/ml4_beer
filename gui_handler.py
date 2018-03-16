@@ -29,6 +29,23 @@ def handle_pass(name):
             main.hideSubWindow("login")
 
 
+def add_transaction():
+    # get first scan - room
+    room = main.getEntry("barcode_field")
+    # todo:error handling
+    main.clearEntry("barcode_field")
+    main.setFocus("barcode_field")
+    # get second scan - multiplier
+    mp = main.getEntry("barcode_field")
+    main.clearEntry("barcode_field")
+    main.setFocus("barcode_field")
+    # get third scan - product
+    prod = main.getEntry("barcode_field")
+    main.clearEntry("barcode_field")
+    main.setFocus("barcode_field")
+    tmp = room + mp + prod
+    print(tmp)
+
 
 def show_add_user_sw():
     main.showSubWindow("add_user_sw")
@@ -48,7 +65,6 @@ def rem_prod_button_press(name):
         main.infoBox("Product with barcode %s removed from DB." % barcode)
         main.hideSubWindow("rem_prod_sw")
         main.showSubWindow("admin_tools")
-
 
 def add_user_button_press(name):
     if name == 'add_user_cancel':
@@ -105,9 +121,6 @@ def add_prod_button_press(name):
             main.hideSubWindow("add_prod_sw")
             main.showSubWindow("admin_tools")
 
-
-
-
 main = gui()
 main.setTitle("Mellemste 4. Oelsystem!")
 main.setIcon("maribo.gif")
@@ -119,12 +132,25 @@ main.setLabelFont(size=20, family="Verdana")
 
 
 # latest transactions table
-main.addLabel("latest_transactions_label", text="Latest transactions", row=0, column=0)
+main.addLabel("latest_transactions_label", text="Latest transactions", row=0, column=0, rowspan=10)
 main.addListBox("latest_transactions_table", [] , 1, 0, colspan=5)
+
+
+
+# input field
+main.addEntry("barcode_field", column=10, row=main.getRow())
+
+# todo: some hacky shit here. doesn't work because it reenters the function on each enter press
+
+#main.enableEnter(add_transaction)
+
+# scoreboard
+# TODO: Consider adding graph instead...
 
 # add admin button
 main.setButtonFont(size=14, family="Times")
-main.addButton("Admin", admin_window, row=main.getRow())
+main.addButton("Admin", admin_window, column=10, row=main.getRow())
+
 
 
 
