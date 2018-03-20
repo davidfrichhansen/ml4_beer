@@ -145,7 +145,7 @@ main.addEntry("barcode_field", column=10, row=main.getRow())
 #main.enableEnter(add_transaction)
 
 # scoreboard
-# TODO: Consider adding graph instead...
+# TODO: Add graph instead of shitty table
 
 # add admin button
 main.setButtonFont(size=14, family="Times")
@@ -253,6 +253,22 @@ main.addButtons(["Leave Admin","Generate bill", "Add user", "Add product", "Dele
 main.stopSubWindow()
 ## end subwindow
 
+## begin subwindow - transaction step 2 - multiplier
+## THIS DOESNT WORK YET
+
+main.startSubWindow(name="get_mp", title="Scan multiplier")
+main.setBg("LightCyan")
+main.setFg("Black")
+main.setSize(300, 300)
+main.setFont(size=14, family="Verdana")
+main.addLabel("Scan multiplier", row=0, column=0)
+main.addLabel("Current balance for room: %s" % "placeholder", row=0, column=1)
+main.addEntry("get_mp", row=1, column=0)
+main.setFocus("get_mp")
+main.enableEnter("get_mp")
+
+main.stopSubWindow()
+## end subwindow
 
 main.go()
 

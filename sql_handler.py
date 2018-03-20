@@ -180,13 +180,36 @@ def add_user_to_db(name, barcode):
     conn.close()
 
 
+def get_intermediate_balance(barcode):
+    # return balance of user with barcode 'barcode' without erasing anything
+    conn = sqlite3.connect('beer_db.db')
+    # get room
+    room = conn.execute("SELECT Room FROM Users WHERE Barcode=(?)", (barcode, )).fetchone()[0]
+
+
+    trans = conn.execute("SELECT * FROM Transactions WHERE Room=(?)", (room,)).fetchall()
+    bal = 0
+    for t in trans:
+        prod = t[1]
+        mp = t[2]
+        price = conn.execute("SELECT Price FROM Products WHERE Name=(?)", (prod,)).fetchone()[0]
+        bal += float(price*mp)
+
+    conn.close()
+
+    return bal
+
+
+
+
 #create_db()
-"""
-add_product_to_db('Testprd', 123, 5, 'Beer')
-remove_product_from_db(123)
-add_product_to_db('Testprd', 123, 5.3, 'Beer'   )
-transaction(433, 123, 10)
-transaction(432, 123, 4)
-add_user_to_db('X10', 'X10')
-generate_bill()
-"""
+
+#add_product_to_db('Testprd', 123, 5, 'Beer')
+#remove_product_from_db(123)
+#add_product_to_db('Testprd', 123, 5.3, 'Beer'   )
+#for _ in range(5):
+#    transaction(433, 123, 10)
+#print(get_intermediate_balance(433))
+#transaction(432, 123, 4)
+#add_user_to_db('X10', 'X10')
+#generate_bill()
